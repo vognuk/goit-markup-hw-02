@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#banner {
+  width: 1600px;
+  height: 600px;
+  background-image: url(./img/header.jpg);
+}
