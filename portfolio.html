@@ -34,118 +34,124 @@
     </header>
 
     <!--Portfolio container-->
-    <main>
+    <main class="menu-portfolio">
 
-      <!-- Portfolio sorting menu: nav>ul.sort-portfolio>(li.sort-item>div.item-button>p.item-text>a.text-link)*5-->
+      <!---Hiden header, minimal text size-->
+      <h1 class="hidden-title">Портфоліо</h1>
+
+      <!-- Portfolio sorting menu: nav>ul.sort-portfolio>(li.sort-item>div.item-button>p.item-text>a.text-link)*5,
+      nav>ul.menu-list>(li.menu-item>div.menu-button>p.item-text>a.item-link)*5-->
+      
       <nav>
-        <ul class="sort-portfolio">
-          <li class="sort-item">
-            <div class="item-button">
-              <p class="item-text"><a href="" class="text-link"></a></p>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-button">
+              <p class="item-text"><a href="#" class="item-link">Все</a></p>
             </div>
           </li>
-          <li class="sort-item">
-            <div class="item-button">
-              <p class="item-text"><a href="" class="text-link"></a></p>
+          <li class="menu-item">
+            <div class="menu-button">
+              <p class="item-text"><a href="#" class="item-link">Веб-сайты</a></p>
             </div>
           </li>
-          <li class="sort-item">
-            <div class="item-button">
-              <p class="item-text"><a href="" class="text-link"></a></p>
+          <li class="menu-item">
+            <div class="menu-button">
+              <p class="item-text"><a href="#" class="item-link">Приложения</a></p>
             </div>
           </li>
-          <li class="sort-item">
-            <div class="item-button">
-              <p class="item-text"><a href="" class="text-link"></a></p>
+          <li class="menu-item">
+            <div class="menu-button">
+              <p class="item-text"><a href="#" class="item-link">Дизайн</a></p>
             </div>
           </li>
-          <li class="sort-item">
-            <div class="item-button">
-              <p class="item-text"><a href="" class="text-link"></a></p>
+          <li class="menu-item">
+            <div class="menu-button">
+              <p class="item-text"><a href="#" class="item-link">Маркетинг</a></p>
             </div>
           </li>
         </ul>
       </nav>
 
-
-      <!--Portfolio items: section.main-container>(ul.portfolio-main-list>li.portfolio-item*3>(li.portfolio-item>div.item-container>div.image-abovecover+img.item-image+h3.portfolio-subtitle>a+span.portfolio-subtitle-group)*3)-->
+           <!--Portfolio items: section.main-container>h2>(ul.portfolio-main-list>li.portfolio-item*3>(li.portfolio-item>div.item-container>div.image-abovecover+img.item-image+h3.portfolio-subtitle>a+span.portfolio-subtitle-group)*3)-->
       <section class="main-container">
+        <h2 class="hidden-title">Портфолио</h2>
         <ul class="portfolio-main-list">
           <li class="portfolio-item">
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-1.jpg" alt="portfolio-1" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Технокряк</a></h3>
+                <span class="portfolio-subtitle-group">Веб-сайт</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-2.jpg" alt="portfolio-2" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Постер New Orlean vs Golden Star</a></h3>
+                <span class="portfolio-subtitle-group">Дизайн</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-3.jpg" alt="portfolio-3" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Ресторан Seafood</a></h3>
+                <span class="portfolio-subtitle-group">Приложение</span>
               </div>
             </li>
-          </li>
+          
           <li class="portfolio-item">
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-4.jpg" alt="portfolio-4" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Проект Prime</a></h3>
+                <span class="portfolio-subtitle-group">Маркетинг</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-5.jpg" alt="portfolio-5" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Проект Boxes</a></h3>
+                <span class="portfolio-subtitle-group">Приложение</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/desighn_solutions.jpg" alt="portfolio-6" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Inspiration has no Borders</a></h3>
+                <span class="portfolio-subtitle-group">Веб-сайт</span>
               </div>
             </li>
           </li>
+
           <li class="portfolio-item">
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-7.jpg" alt="portfolio-7" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">ИзданиеLimited Edition</a></h3>
+                <span class="portfolio-subtitle-group">Дизайн</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/portfolio-8.jpg" alt="portfolio-8" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Проект LAB</a></h3>
+                <span class="portfolio-subtitle-group">Маркетинг</span>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="item-container">
                 <div class="image-abovecover"></div>
-                <img src="" alt="" class="item-image">
-                <h3 class="portfolio-subtitle"><a href=""></a></h3>
-                <span class="portfolio-subtitle-group"></span>
+                <img src="./images/desktop_apps.jpg" alt="portfolio-9" class="item-image">
+                <h3 class="portfolio-subtitle"><a href="">Growing Business</a></h3>
+                <span class="portfolio-subtitle-group">Приложение</span>
               </div>
             </li>
           </li>
