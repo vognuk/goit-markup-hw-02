@@ -15,20 +15,15 @@ body {
   --header-blue: #2196f3;
   --subtitle-color: #757575;
   --logo-color-2-2: #000000;
-  /* --header-item-active: #2196f3; */
-  /* --email-color: #2196f3; */
   --hero-ways-background: rgba(47, 48, 58, 0.8);
   --title-color: #212121;
   --svg-background-color: #f5f4fa;
-  /* --textbox-color: rgba(47, 48, 58, 0.8); */
   --team-box-color: #f5f4fa;
   --social-icon-color: #afb1b8;
-  /* --social-active-background: #2196f3; */
   --footer-color: #2f303a;
   --button-text-color: #ffffff;
   --contact-color: rgba(255, 255, 255, 0.6);
   --copy-rights-color: rgba(255, 255, 255, 0.4);
-  /* --common-font: Roboto; */
   --logo-font: Raleway;
 
   font-family: Roboto, sans-serif;
@@ -47,10 +42,10 @@ a:visited {
   color: var(--title-color);
 }
 
-.header-contacts {
+/* .header-contacts {
   color: green;
   font-size: 14px;
-}
+} */
 
 /* .menu-list:active {
   color: var(--social-active-background);
@@ -74,17 +69,14 @@ a:visited {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-/* 
-.header-address {
+
+.header-contacts {
   color: var(--subtitle-color);
-  font-family: Roboto, sans-serif;
   font-size: 14px;
-} */
+}
 
 .contacts-link {
   color: var(--subtitle-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -213,6 +205,15 @@ a:visited {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+
+.subscribe {
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /* .menu-portfolio a {
   text-decoration: none;
 } */
@@ -229,9 +230,25 @@ a:visited {
 
 /* Portfolio */
 
-.main-container {
+/* .main-container {
   --item-block-color: #757575;
   color: var(--title-color);
+} */
+
+.portfolio-menu:hover {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.menu-button {
+  text-align: center;
+  font-weight: inherit;
+}
+.item-text:hover {
+  color: var(--button-text-color);
 }
 
 .item-box-1,
@@ -242,7 +259,20 @@ a:visited {
 .item-box-6,
 .item-box-7,
 .item-box-8,
-.item-box-9 > p {
+.item-box-9 > h3 {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list > span {
+  color: var(--subtitle-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-subtitle {
