@@ -197,13 +197,17 @@ a:visited {
   letter-spacing: 0.03em;
 }
 
-.footer-address > p {
+/* .footer-address > p {
   color: var(--button-text-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+} */
+
+address {
+  font-style: normal;
 }
 
 .subscribe {
@@ -214,6 +218,15 @@ a:visited {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.contacts-links {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* .menu-portfolio a {
   text-decoration: none;
 } */
@@ -281,4 +294,13 @@ a:visited {
 
 .portfolio-subtitle-group {
   color: var(--subtitle-color);
+}
+
+.copyright {
+  color: var(--copy-rights-color);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
