@@ -4,10 +4,96 @@
   box-sizing: border-box;
 }
 
-#banner {
+/* :root {
+  --title-color: green;
+  --common-font: Roboto;
+  --logo-font: Raleway;
+  --font-family: ; 
+ } */
+
+body {
+  --header-blue: #2196f3;
+  --header-job-color: #757575;
+  --logo-color-2-2: #000000;
+  /* --header-item-active: #2196f3; */
+  /* --email-color: #2196f3; */
+  --hero-ways-background: rgba(47, 48, 58, 0.8);
+  --title-color: #212121;
+  --svg-background-color: #f5f4fa;
+  /* --textbox-color: rgba(47, 48, 58, 0.8); */
+  --team-box-color: #f5f4fa;
+  --social-icon-color: #afb1b8;
+  --social-active-background: #2196f3;
+  --footer-color: #2f303a;
+  --button-text-color: #ffffff;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --copy-rights-color: rgba(255, 255, 255, 0.4);
+  --common-font: Roboto;
+  --logo-font: Raleway;
+  /* --font-family: ; */
+  /* color: var(--title-color); */
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+}
+
+/* h1{
+} */
+
+#hero {
   width: 1600px;
   height: 600px;
-  background-image: url(./img/header.jpg);
+  background-image: url('../images/header.jpg');
+}
+
+.hidden-title {
+  /* Костыль - как сделать скрытый заголовок? */
+  color: rgba(255, 255, 255, 0);
+}
+
+.main {
+}
+
+.footer {
+}
+
+.menu-portfolio {
+}
+
+.menu-portfolio a {
+  text-decoration: none;
+}
+
+.team-box {
+  /* Разобраться в записи правила для тени - структура. Правильно перенести из figma */
+  --member-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.member-box {
+  box-shadow: var(--box-shadow);
+}
+
+/* Portfolio */
+
+.main-container {
+  --item-block-color: #757575;
+}
+
+.item-box-1,
+.item-box-2,
+.item-box-3,
+.item-box-4,
+.item-box-5,
+.item-box-6,
+.item-box-7,
+.item-box-8,
+.item-box-9 {
+}
+
+/* h1 {
+  color: var (var(--title-color));
 }
 
 li {
@@ -17,4 +103,4 @@ li {
 ul {
   margin-left: 0px;
   padding-left: 0px;
-}
+} */
