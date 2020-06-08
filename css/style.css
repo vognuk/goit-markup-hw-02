@@ -30,39 +30,35 @@ body {
   font-style: normal;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
+.studio-link,
+.portfolio-link,
+.contacts-link {
   color: var(--title-color);
-}
-
-/* .header-contacts {
-  color: green;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-} */
-
-/* .menu-list:active {
-  color: var(--social-active-background);
-} */
-
-.menu-list:hover {
-  color: var(--social-active-background);
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
-.header {
+/* links underline off */
+.logo-link,
+.studio-link,
+.portfolio-link,
+.contacts-link,
+.tel-link,
+.mail-link,
+.instagram-link,
+.twitter-link,
+.facebook-link,
+.linkedin-link,
+.item-link {
+  text-decoration: none;
 }
 
-.menu-list:visited {
-  color: var(--title-color);
-}
-
-.menu-list {
+.tel-link,
+.mail-link {
+  color: var(--subtitle-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -72,18 +68,37 @@ a:visited {
 
 .header-contacts {
   color: var(--subtitle-color);
-  font-size: 14px;
-}
-
-.contacts-link {
-  color: var(--subtitle-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 
-#hero {
+/* Items change its color and underlining */
+.portfolio-link:hover {
+  color: var(--header-blue);
+  text-decoration: underline;
+}
+.studio-link:hover {
+  color: var(--header-blue);
+  text-decoration: underline;
+}
+.contacts-link:hover {
+  color: var(--header-blue);
+  text-decoration: underline;
+}
+
+.tel-link:hover {
+  color: var(--header-blue);
+  text-decoration: underline;
+}
+
+.mail-link:hover {
+  color: var(--header-blue);
+  text-decoration: underline;
+}
+
+.hero {
   width: 1600px;
   height: 600px;
   background-image: url('../images/header.jpg');
@@ -93,7 +108,68 @@ a:visited {
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
-/* Invisible headers of page boxes  */
+/* links hover */
+.studio-link:hover
+
+.portfolio-link:hover
+
+.contacts-link:hover
+
+.instagram-link:hover
+
+.twitter-link:hover
+
+.facebook-link:hover
+
+.linkedin-link:hover
+
+.item-link:hover
+
+/* links focus */
+.studio-link:focus
+
+.portfolio-link:focus
+
+.contacts-link:focus
+
+.tel-link:focus
+
+.mail-link:focus
+
+.instagram-link:focus
+
+.twitter-link:focus
+
+.facebook-link:focus
+
+.linkedin-link:focus
+
+.item-link:focus
+
+/* links visited */
+.studio-link:visited
+
+.portfolio-link:visited
+
+.contacts-link:visited
+
+.tel-link:visited
+
+.mail-link:visited
+
+.instagram-link:visited
+
+.twitter-link:visited
+
+.facebook-link:visited
+
+.linkedin-link:visited
+
+.item-link:visited
+
+/* .menu-list> */
+
+/* Invisible headers of page boxes*/
 .hidden-title {
   /* Костыль - как сделать скрытый заголовок? */
   color: rgba(255, 255, 255, 0);
@@ -160,12 +236,6 @@ a:visited {
   letter-spacing: 0.03em;
 }
 
-.main {
-}
-
-.footer {
-}
-
 /* Logo Web Studio styles */
 .logo-1-2 {
   font-family: var(--logo-font);
@@ -197,15 +267,6 @@ a:visited {
   letter-spacing: 0.03em;
 }
 
-/* .footer-address > p {
-  color: var(--button-text-color);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-} */
-
 address {
   font-style: normal;
 }
@@ -219,36 +280,7 @@ address {
   text-transform: uppercase;
 }
 
-.contacts-links {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* .menu-portfolio a {
-  text-decoration: none;
-} */
-
-/* .team-box {
-  /* Разобраться в записи правила для тени - структура. Правильно перенести из figma
-  --member-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-} */
-
-/* .member-box {
-  box-shadow: var(--box-shadow);
-} */
-
-/* Portfolio */
-
-/* .main-container {
-  --item-block-color: #757575;
-  color: var(--title-color);
-} */
-
-.portfolio-menu:hover {
+.portfolio-menu {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -256,23 +288,17 @@ address {
   letter-spacing: 0.03em;
 }
 
+.item-link:hover {
+  color: var(--button-text-color);
+  background: var(--header-blue);
+}
+
 .menu-button {
   text-align: center;
   font-weight: inherit;
 }
-.item-text:hover {
-  color: var(--button-text-color);
-}
 
-.item-box-1,
-.item-box-2,
-.item-box-3,
-.item-box-4,
-.item-box-5,
-.item-box-6,
-.item-box-7,
-.item-box-8,
-.item-box-9 > h3 {
+.item-link {
   color: var(--title-color);
   font-weight: bold;
   font-size: 18px;
@@ -286,10 +312,6 @@ address {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-}
-
-.portfolio-subtitle {
-  /* color: var(--title-color); */
 }
 
 .portfolio-subtitle-group {
