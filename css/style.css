@@ -13,7 +13,7 @@
 
 body {
   --header-blue: #2196f3;
-  --header-job-color: #757575;
+  --subtitle-color: #757575;
   --logo-color-2-2: #000000;
   /* --header-item-active: #2196f3; */
   /* --email-color: #2196f3; */
@@ -23,33 +23,149 @@ body {
   /* --textbox-color: rgba(47, 48, 58, 0.8); */
   --team-box-color: #f5f4fa;
   --social-icon-color: #afb1b8;
-  --social-active-background: #2196f3;
+  /* --social-active-background: #2196f3; */
   --footer-color: #2f303a;
   --button-text-color: #ffffff;
   --contact-color: rgba(255, 255, 255, 0.6);
   --copy-rights-color: rgba(255, 255, 255, 0.4);
-  --common-font: Roboto;
+  /* --common-font: Roboto; */
   --logo-font: Raleway;
-  /* --font-family: ; */
-  /* color: var(--title-color); */
+
   font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--title-color);
+}
+
+.header-contacts {
+  color: green;
+  font-size: 14px;
+}
+
+/* .menu-list:active {
+  color: var(--social-active-background);
+} */
+
+.menu-list:hover {
+  color: var(--social-active-background);
 }
 
 .header {
 }
 
-/* h1{
+.menu-list:visited {
+  color: var(--title-color);
+}
+
+.menu-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+/* 
+.header-address {
+  color: var(--subtitle-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
 } */
+
+.contacts-link {
+  color: var(--subtitle-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 
 #hero {
   width: 1600px;
   height: 600px;
   background-image: url('../images/header.jpg');
+  /* background-color: var(--hero-ways-background); */
+  font-weight: bold;
+  color: #ffffff;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
+/* Invisible headers of page boxes  */
 .hidden-title {
   /* Костыль - как сделать скрытый заголовок? */
   color: rgba(255, 255, 255, 0);
+}
+
+.principles {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.principles > p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.ways-box > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.ways-box > h3 {
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ways-box,
+.team-box,
+.clients-box > h2 {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-box > h3 {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.member-box > span {
+  color: var(--subtitle-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .main {
@@ -58,27 +174,64 @@ body {
 .footer {
 }
 
-.menu-portfolio {
+/* Logo Web Studio styles */
+.logo-1-2 {
+  font-family: var(--logo-font);
+  color: var(--header-blue);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
-.menu-portfolio a {
+.logo-2-2 {
+  font-family: var(--logo-font);
+  color: var(--logo-color-2-2);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-2-3 {
+  font-family: var(--logo-font);
+  color: var(--button-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.footer-address > p {
+  color: var(--button-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+/* .menu-portfolio a {
   text-decoration: none;
-}
+} */
 
-.team-box {
-  /* Разобраться в записи правила для тени - структура. Правильно перенести из figma */
+/* .team-box {
+  /* Разобраться в записи правила для тени - структура. Правильно перенести из figma
   --member-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-}
+} */
 
-.member-box {
+/* .member-box {
   box-shadow: var(--box-shadow);
-}
+} */
 
 /* Portfolio */
 
 .main-container {
   --item-block-color: #757575;
+  color: var(--title-color);
 }
 
 .item-box-1,
@@ -89,18 +242,13 @@ body {
 .item-box-6,
 .item-box-7,
 .item-box-8,
-.item-box-9 {
+.item-box-9 > p {
 }
 
-/* h1 {
-  color: var (var(--title-color));
+.portfolio-subtitle {
+  /* color: var(--title-color); */
 }
 
-li {
-  list-style-type: none;
+.portfolio-subtitle-group {
+  color: var(--subtitle-color);
 }
-
-ul {
-  margin-left: 0px;
-  padding-left: 0px;
-} */

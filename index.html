@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,39 +16,47 @@
     <!--main menu container-->
     <header>
       <a href="https://vognuk.github.io/goit-markup-hw-01/">
-        Web Studio
+        <span class="logo-2-2"><span class="logo-1-2">Web</span> Studio</span>
       </a>
-      <ul>
+      <ul class="menu-list">
         <li><a href="./index.html">Студия</a></li>
-        <li><a href="./portfolio.html">Портфолио</a></li>
+        <li>
+          <a href="./portfolio.html" rel="chapter" target="_self">Портфолио</a>
+        </li>
 
-        <!--Тут вставити якор-->
+        <!--Is this link for an anchor?-->
         <li><a href="">Контакты</a></li>
       </ul>
-      <ul>
-        <li>
-          <a class="contacts-link" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </li>
-        <li>
-          <a class="contacts-link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-      </ul>
+      <div class="contacts">
+        <ul class="header-address">
+          <li>
+            <!-- <span class="header-contacts"> -->
+            <p class="contacts-link">
+              <a href="tel:+380991111111">+38 099 111 11 11</a>
+            </p>
+          </li>
+          <li>
+            <a class="contacts-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!--studio container-->
     <main>
       <!--logo container-->
+
       <nav id="hero">
         <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <a href="https://www.google.com">Заказать услугу</a>
+        <p>
+          <button autofocus>Заказать услугу</button>
+        </p>
       </nav>
 
       <!--main principles container-->
-      <section>
+      <section class="principles">
         <h2 class="hidden-title">Главные принципы</h2>
         <div>
           <img src="./images/antenna1.svg" alt="Attention to details" />
@@ -85,7 +93,7 @@
       </section>
 
       <!--ways of development container-->
-      <section>
+      <section class="ways-box">
         <h2>Чем мы занимаемся</h2>
         <div class="ways-box">
           <img src="./images/desktop_apps.jpg" alt="Desktop apps" />
@@ -103,7 +111,7 @@
 
       <!--web studio team container-->
       <section class="team-box">
-        <h3>Наша команда</h3>
+        <h2>Наша команда</h2>
         <div class="member-box">
           <img src="./images/john_smith.jpg" alt="John Smith" />
           <h3>Николай Кучеренко</h3>
@@ -183,7 +191,7 @@
       </section>
 
       <!--clients container-->
-      <section>
+      <section class="clients-box">
         <h2>Постоянные клиенты</h2>
         <div>
           <a href="https://www.google.com/"
@@ -208,9 +216,9 @@
     <!--contacts container-->
     <footer>
       <a href="https://vognuk.github.io/goit-markup-hw-01/">
-        <span>Web Studio</span>
+        <span class="logo-2-3"><span class="logo-1-2">Web</span> Studio</span>
       </a>
-      <address>
+      <address class="footer-address">
         <p>г.Киев, пр-т Леси Украинки, 26</p>
         <ul>
           <li>
