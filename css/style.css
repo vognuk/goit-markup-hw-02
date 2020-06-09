@@ -98,7 +98,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero > p > button {
+.hero-ordering {
   color: var(--button-text-color);
   position: absolute;
   width: 136px;
@@ -255,6 +255,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .member-box > span {
   color: var(--subtitle-color);
   font-weight: normal;
