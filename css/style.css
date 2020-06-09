@@ -52,13 +52,11 @@ body {
 
 /* Links common styles */
 
-/* All links underline off */
+/* links underline off */
 .logo-link,
 .studio-link,
 .portfolio-link,
 .contacts-link,
-.tel-link,
-.mail-link,
 .instagram-link,
 .twitter-link,
 .facebook-link,
@@ -76,6 +74,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* Banner  */
