@@ -26,39 +26,15 @@ body {
   --copy-rights-color: rgba(255, 255, 255, 0.4);
   --logo-font: Raleway;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   font-style: normal;
 }
 
+/* Header menu items */
 .studio-link,
 .portfolio-link,
 .contacts-link {
   color: var(--title-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-/* links underline off */
-.logo-link,
-.studio-link,
-.portfolio-link,
-.contacts-link,
-.tel-link,
-.mail-link,
-.instagram-link,
-.twitter-link,
-.facebook-link,
-.linkedin-link,
-.item-link {
-  text-decoration: none;
-}
-
-.tel-link,
-.mail-link {
-  color: var(--subtitle-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -74,20 +50,88 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Items change its color and underlining */
-.portfolio-link:hover {
-  color: var(--header-blue);
-  text-decoration: underline;
-}
-.studio-link:hover {
-  color: var(--header-blue);
-  text-decoration: underline;
-}
-.contacts-link:hover {
-  color: var(--header-blue);
-  text-decoration: underline;
+/* Links common styles */
+
+/* All links underline off */
+.logo-link,
+.studio-link,
+.portfolio-link,
+.contacts-link,
+.tel-link,
+.mail-link,
+.instagram-link,
+.twitter-link,
+.facebook-link,
+.linkedin-link,
+.item-link {
+  text-decoration: none;
 }
 
+/* Contact links */
+.tel-link,
+.mail-link {
+  color: var(--subtitle-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Banner  */
+
+.hero {
+  width: 1600px;
+  height: 600px;
+  background-image: url('../images/header.jpg');
+  /* background-color: var(--hero-ways-background); */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.hero > h1 {
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero > p > button {
+  color: var(--button-text-color);
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Links common efects */
+
+/* Items change its color */
+.portfolio-link:hover {
+  color: var(--header-blue);
+}
+
+.studio-link:hover {
+  color: var(--header-blue);
+}
+
+.contacts-link:hover {
+  color: var(--header-blue);
+}
+
+/* Items change its color and underlining */
 .tel-link:hover {
   color: var(--header-blue);
   text-decoration: underline;
@@ -98,76 +142,40 @@ body {
   text-decoration: underline;
 }
 
-.hero {
-  width: 1600px;
-  height: 600px;
-  background-image: url('../images/header.jpg');
-  /* background-color: var(--hero-ways-background); */
-  font-weight: bold;
-  color: #ffffff;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-}
-
 /* links hover */
 .studio-link:hover
-
 .portfolio-link:hover
-
 .contacts-link:hover
-
 .instagram-link:hover
-
 .twitter-link:hover
-
 .facebook-link:hover
-
 .linkedin-link:hover
-
 .item-link:hover
 
 /* links focus */
 .studio-link:focus
-
 .portfolio-link:focus
-
 .contacts-link:focus
-
 .tel-link:focus
-
 .mail-link:focus
-
 .instagram-link:focus
-
 .twitter-link:focus
-
 .facebook-link:focus
-
 .linkedin-link:focus
-
 .item-link:focus
 
 /* links visited */
 .studio-link:visited
-
 .portfolio-link:visited
-
 .contacts-link:visited
-
 .tel-link:visited
-
 .mail-link:visited
-
 .instagram-link:visited
-
 .twitter-link:visited
-
 .facebook-link:visited
-
 .linkedin-link:visited
-
 .item-link:visited
 
-/* .menu-list> */
 
 /* Invisible headers of page boxes*/
 .hidden-title {
@@ -175,7 +183,16 @@ body {
   color: rgba(255, 255, 255, 0);
 }
 
-.principles {
+/* Principle container */
+
+.principle-header {
+  /* position: absolute;
+  width: 270px;
+  height: 16px;
+  left: 515px;
+  top: 924px; */
+
+  color: var(--title-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -183,12 +200,21 @@ body {
   text-transform: uppercase;
 }
 
-.principles > p {
+.principle-description {
+  /* position: absolute;
+  width: 270px;
+  height: 75px;
+  left: 515px;
+  top: 950px; */
+
+  color: var(--subtitle-color);
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+
+/* ways of development container */
 
 .ways-box > h2 {
   font-weight: bold;
@@ -219,6 +245,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* web studio team container */
+
 .member-box > h3 {
   color: var(--title-color);
   font-weight: 500;
@@ -236,7 +264,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Logo Web Studio styles */
+/* Footer. Logo Web Studio styles */
+
 .logo-1-2 {
   font-family: var(--logo-font);
   color: var(--header-blue);
@@ -267,6 +296,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Footer */
+
 address {
   font-style: normal;
 }
@@ -279,6 +310,17 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.copyright {
+  color: var(--copy-rights-color);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio */
 
 .portfolio-menu {
   color: var(--title-color);
@@ -300,10 +342,11 @@ address {
 
 .item-link {
   color: var(--title-color);
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-list > span {
@@ -318,11 +361,8 @@ address {
   color: var(--subtitle-color);
 }
 
-.copyright {
-  color: var(--copy-rights-color);
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+/* Rules order */
+/* 1.Positioning */
+/* 2.Block model */
+/* 3.typography */
+/* 4.Displaying */
