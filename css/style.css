@@ -131,15 +131,12 @@ body {
   color: var(--header-blue);
 }
 
-/* Items change its color and underlining */
 .tel-link:hover {
   color: var(--header-blue);
-  text-decoration: underline;
 }
 
 .mail-link:hover {
   color: var(--header-blue);
-  text-decoration: underline;
 }
 
 /* links hover */
